@@ -1,7 +1,7 @@
 import React from 'react'
 import BounceLoader from "react-spinners/BounceLoader"
 
-const Loader = () => {
+const Loading = () => {
     return (
         <div className='position-absolute top-0 start-0 w-100'>
             <div className='position-relative' style={{ height: '100vh', backgroundColor: 'rgba(230,230,230,0.7)' }}>
@@ -15,4 +15,4 @@ const Loader = () => {
     )
 }
 
-export default Loader
+export default Loading

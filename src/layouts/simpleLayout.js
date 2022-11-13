@@ -3,7 +3,7 @@ import { useState } from 'react'
 import {  Button, Col, FloatingLabel, Form, Row } from 'react-bootstrap'
 import Banner from '../components/banner/banner'
 import Content from '../components/content/content'
-import Loader from '../components/tools/loader'
+import Loading from '../components/tools/loading'
 import ReactWordcloud from 'react-wordcloud';
 import Alert from '../components/tools/alert'
 import { useRef } from 'react'
@@ -148,7 +148,7 @@ const SimpleLayout = (props) => {
     <Banner/>
       { error ? <Alert variant='error'> {error} </Alert>: null}
     <Content>
-      { loading ? <Loader /> : null}
+      { loading ? <Loading /> : null}
       <Col>
         <Row className='justify-content-center'>
           <Col sm={ submitted? 4 : 6} >
